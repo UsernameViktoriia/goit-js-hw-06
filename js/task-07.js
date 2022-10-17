@@ -3,7 +3,7 @@
 const inputEl = document.querySelector('#font-size-control');
 const textEl = document.querySelector('#text');
 
-inputEl.addEventListener('change', (event) => {
-    const size = inputEl.value;
+inputEl.addEventListener('input', (event) => {
+    const size = event.currentTarget.value;
     textEl.style.fontSize = `${size}px`;
 });
